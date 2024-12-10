@@ -1,0 +1,38 @@
+.carousel-item {
+    position: relative;
+    text-align: center;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .image-count {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .camera-image-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .camera-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .webcam-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,100 @@
+.SignUp_Google {
+  display: flex;
+  place-items: center;
+  margin: 4rem auto;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.SignUp_banner img {
+  border-radius: 20px;
+}
+.SignUp_container {
+  background-color: #fff;
+  min-height: 40%;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.signup_button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 5px 20px;
+  background-color: black;
+  color: #fff;
+  border-radius: 20px;
+}
+.signup_button img {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .SignUp_Google {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Ensure content is at the bottom */
+    margin: 0 auto;
+    height: 100vh; /* Full viewport height */
+  }
+
+  .SignUp_container {
+    width: 100%; /* Full width */
+    padding: 20px; /* Adjust padding */
+    position: absolute; /* Position the container over the image */
+    bottom: 0; /* Align the container to the bottom of the parent */
+    background-color: #fff; /* Ensure visibility on top of the image */
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); /* Shadow for separation */
+  }
+
+  .SignUp_banner {
+    height: 90%; /* Full height of the viewport */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure banner stays behind the signup container */
+  }
+
+  .SignUp_banner img {
+    height: 100%; /* Ensure image covers full height */
+    width: 100%;
+    border-radius: 0px;
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+  }
+
+  .signup_button {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+
+/* Tablet View */ 
+ @media screen and (max-width: 1024px) {
+  .SignUp_Google {
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto;
+  }
+
+  .SignUp_container {
+    max-width: 100%;
+    padding: 40px;
+  }
+
+  .SignUp_banner img {
+    height: 100%; 
+    width: 100%;
+  }
+
+  .signup_button {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
