@@ -1,6 +1,6 @@
-// components/feed/PostBox.jsx
+
 import React, { useState } from "react";
-import "./Style.css"; // Add styles for PostBox
+import "./Style.css";
 import SendIcon from '@mui/icons-material/Send';
 
 function PostBox({ profilePhoto, username, hoursAgo, description, postImage, likes }) {
