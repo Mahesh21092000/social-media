@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getDatabase, ref, onValue } from "firebase/database"; // Realtime Database SDK
-import PostBox from "./PostBox"; // Import your PostBox component
+import { getDatabase, ref, onValue } from "firebase/database"; 
+import PostBox from "./PostBox"; 
 import './Style.css'
 
 function PostFeeds() {
